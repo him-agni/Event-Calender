@@ -1,0 +1,112 @@
+.calender {
+  width: 700px;
+  height: 520px;
+  margin: 20px auto;
+  border: 1.5px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  padding-bottom: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 50px;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(166, 56, 218);
+  color: white;
+  padding: 15px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.header button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 15px;
+  opacity: 0.7;
+  cursor: pointer;
+}
+.day-names,
+.days {
+  display: flex;
+  flex-wrap: wrap;
+}
+.day-name,
+.day,
+.empty-day {
+  width: 14.28%;
+  padding: 10px;
+  border: 2px solid #f0f0f0;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 12px;
+  opacity: 0.7;
+  border-radius: 5px;
+}
+.day-name {
+  background-color: #f0f0f0;
+  font-weight: bold;
+  opacity: 0.5;
+  margin-bottom: 4px;
+}
+.day {
+  border: 2px solid #f0f0f0;
+  height: 85px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.day:hover {
+  background-color: rgb(210, 176, 238);
+}
+.empty-day {
+  border: 2px solid #f0f0f0;
+  background-color: #f0f0f0;
+}
+.today {
+  background-color: rgb(166, 56, 218);
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+}
+.selected {
+  background-color: rgb(238, 157, 241);
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+}
+.event-form {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.event-form input[type="text"] {
+  flex: 1;
+  padding: 10px 15px;
+  font-size: 14px;
+  border: 1.5px solid #ccc;
+  border-radius: 5px;
+  min-width: 300px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.event-form input[type="submit"] {
+  padding: 10px 20px;
+  font-size: 14px;
+  background-color: rgb(166, 56, 218); /* Pink color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: auto;
+  min-width: 100px;
+}
+.event-text {
+  font-size: 14px;
+  background-color: rgb(65, 204, 130);
+  color: white;
+  font-weight: 5%;
+  margin-top: 10px;
+  border-radius: 5px;
+}
