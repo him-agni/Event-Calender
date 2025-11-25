@@ -7,7 +7,10 @@ const Calender = () => {
   const [daysInMonth, setDaysInMonth] = useState([]);
   const [startDay, setStartDay] = useState(0);
   const [selectedDate, setSelectedDate] = useState(null);
-  const [event, setEvent] = useState({});
+  const [event, setEvent] = useState(() => {
+    const saved = localStorage.getItem("calenderEvents");
+    return saved ? JSON.parse(saved) : {};
+  });
   const [eventInput, setEventInput] = useState("");
 
   useEffect(() => {
@@ -24,6 +27,10 @@ const Calender = () => {
     setDaysInMonth(days);
     setStartDay(new Date(year, month, 1).getDay());
   }, [currentDate]);
+
+  useEffect(() => {
+    localStorage.setItem("calenderEvents", JSON.stringify(event));
+  }, [event]);
 
   const weekDays = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
   const prevMonth = () => {
