@@ -5,6 +5,7 @@ A modern, interactive calendar application built with React that allows users to
 <img width="1010" height="851" alt="image" src="https://github.com/user-attachments/assets/cd3a9e4c-ce18-468e-9528-14ddcee64a94" />
 
 ## Live-Demo
+https://event-calender-29da5b.netlify.app/
 
 
 ## ✨ Features
@@ -14,6 +15,7 @@ A modern, interactive calendar application built with React that allows users to
 - **Date Selection** - Click on any date to select it and add an event
 - **Event Display** - View events directly on the calendar for quick reference
 - **Today Highlighting** - Current date is automatically highlighted
+- **Event Persists** - Event data persists along 
 
 ## 🛠️ Built With
 
@@ -48,3 +50,4 @@ A modern, interactive calendar application built with React that allows users to
 - Using spread operators to update object state immutably
 - Creating responsive layouts with CSS flexbox
 - Handling form submissions and user input in React
+- Use of localStorage to store data between refreshes
