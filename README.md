@@ -40,7 +40,7 @@ https://event-calender-29da5b.netlify.app/
 ### Managing Events
 - Events are displayed directly on the calendar dates
 - Currently supports one event per date
-- Events persist during your current session
+- Events persist between sessions
 
 ## 🎯 What I Learned
 
